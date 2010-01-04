@@ -304,7 +304,7 @@ const static CGFloat kReflectionFraction = 0.85;
 		if (targetCover && (targetCover.number != selectedCoverView.number))
 			[self setSelectedCover:targetCover.number];
 		
-		else{
+		else if (targetCover){
 			
 			if([viewDelegate respondsToSelector:@selector(openFlowView:coverTappedAtIndex:)])
 				[viewDelegate openFlowView:self coverTappedAtIndex:targetCover.number];
